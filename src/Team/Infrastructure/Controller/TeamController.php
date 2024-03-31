@@ -29,7 +29,6 @@ class TeamController extends AbstractController
         $teamId = $createTeam->create($request->getDivisionId(), $request->getTeamName());
 
         return new JsonResponse([
-            'status' => 'ok',
             'id' => $teamId
         ]);
     }

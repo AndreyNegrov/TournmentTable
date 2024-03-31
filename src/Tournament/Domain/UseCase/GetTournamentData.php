@@ -9,7 +9,7 @@ use App\Tournament\Domain\Provider\DivisionDataProviderInterface;
 use App\Tournament\Domain\Provider\PlayOffGameDataProviderInterface;
 use App\Tournament\Domain\Provider\TeamDataProviderInterface;
 
-class GetTournamentTable
+class GetTournamentData
 {
     private TeamDataProviderInterface $teamDataProvider;
     private DivisionDataProviderInterface $divisionDataProvider;

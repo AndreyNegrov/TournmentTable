@@ -31,7 +31,7 @@ class TeamModel
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'division' => $this->divisionId,
+            'division_id' => $this->divisionId,
             'score' => $this->score,
             'rating' => $this->rating
         ];

@@ -18,7 +18,6 @@ class DivisionController extends AbstractController
         $divisionId = $createDivision->create($request->getDivisionName());
 
         return new JsonResponse([
-            'status' => 'ok',
             'id' => $divisionId
         ]);
     }

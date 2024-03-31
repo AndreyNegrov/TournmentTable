@@ -15,14 +15,14 @@ class PlayOffController extends AbstractController
 {
     public function createPlayOffGame(CreatePlayOffGameRequest $request, CreatePlayOffGame $createPlayOffGame): JsonResponse
     {
-        $createPlayOffGame->create(
+        $id = $createPlayOffGame->create(
             $request->getStage(),
             $request->getTeamId(),
             $request->getOpponentId()
         );
 
         return new JsonResponse([
-            'status' => 'ok'
+            'id' => $id
         ]);
     }
 
