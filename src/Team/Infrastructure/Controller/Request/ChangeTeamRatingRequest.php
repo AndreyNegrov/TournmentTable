@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Team\Infrastructure\Controller\Request;
 
-use App\Infrastracture\Controller\Request\RequestObjectInterface;
+use App\Shared\Infrastructure\ArgumentResolver\RequestObjectInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Validator\Constraints as Assert;
 
